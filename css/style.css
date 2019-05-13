@@ -10,3 +10,45 @@ html {
 
 body {
   box-sizing: border-box; }
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.6rem; }
+
+.heading-primary {
+  margin-top: -3rem; }
+  .heading-primary--main {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 1.3rem;
+    line-height: 2; }
+  .heading-primary--sub {
+    font-family: "EB Garamond", serif;
+    font-size: 4rem;
+    line-height: 1.7;
+    letter-spacing: .2rem;
+    font-weight: 400; }
+
+.header {
+  background-color: blanchedalmond;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  padding: 3rem;
+  height: 90vh; }
+  .header__btn {
+    justify-self: start; }
+  .header__logo-img {
+    width: 3.5rem;
+    height: 3.5rem;
+    opacity: .7; }
+  .header__text-box {
+    grid-column: 1 / -1;
+    align-self: start;
+    justify-self: center; }
+
+.navigation {
+  justify-self: end; }

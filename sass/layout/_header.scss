@@ -1,0 +1,44 @@
+.header {
+    background-color: blanchedalmond;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    padding: 3rem;
+
+    height: 90vh;
+
+    &__btn {
+        justify-self: start;
+    }
+
+    &__logo {
+        &-img {
+            width: 3.5rem;
+            height: 3.5rem;
+            opacity: .7;            
+        }
+    }
+
+    &__text-box {
+        grid-column: 1 / -1;
+        align-self: start;
+        justify-self: center;
+    }
+}
+
+.navigation {
+    justify-self: end;
+
+    &__list {
+
+    }
+
+    &__item {
+
+    }
+
+    &__link {
+
+    }
+}

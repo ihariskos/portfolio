@@ -23,3 +23,23 @@ body {
         font-weight: 400;
     }
 }
+
+.heading-secondary {
+    position: absolute;
+    top: -14rem;
+    left: 0;
+    z-index: 2;
+    font-family: $reading-font;
+    font-weight: 700;
+    // text-transform: uppercase;
+    font-size: 15rem;
+    letter-spacing: -1rem;
+    z-index: 3;
+    // transform: translateY(-50%);
+    // margin-top: -10rem;
+}
+
+.heading-tertiary {
+    font-family: $heading-font;
+    font-size: 7rem;
+}

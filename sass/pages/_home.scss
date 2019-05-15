@@ -1,22 +1,22 @@
 .container {
     display: grid;
-    grid-template-rows: 95vh repeat(3, 1000px);
+    // grid-row-gap: 10rem;
+    grid-template-rows: 95vh repeat(3, max-content);
     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] 
                            repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
                            [center-end] minmax(6rem, 1fr) [full-end];
 }
 
 .projects {
-    grid-column: full-start / full-end;
-    background: linear-gradient(#D1D5DE, #E8EDF7);
+    // grid-column: full-start / full-end;
+    grid-column: center-start / center-end;
+    margin-bottom: 30rem;
 }
 
 .work {
-    grid-column: full-start / full-end;
-    background: linear-gradient(#E8EDF7, #D1D5DE);
+    grid-column: center-start / center-end;
 }
 
 .about {
-    grid-column: full-start / full-end;
-    background: linear-gradient(#D1D5DE, #E8EDF7);
+    grid-column: center-start / center-end;
 }

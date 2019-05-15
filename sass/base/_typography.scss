@@ -3,7 +3,7 @@ body {
     font-size: $default-font-size;
 }
 
-.heading-primary {
+.heading-1 {
     margin-top: -3rem;
 
     &--main {
@@ -24,7 +24,7 @@ body {
     }
 }
 
-.heading-secondary {
+.heading-2 {
     position: absolute;
     top: -14rem;
     left: 0;
@@ -39,7 +39,12 @@ body {
     // margin-top: -10rem;
 }
 
-.heading-tertiary {
+.heading-3 {
     font-family: $heading-font;
     font-size: 7rem;
+}
+
+.heading-4 {
+    font-family: $heading-font;
+    font-size: 4rem;
 }

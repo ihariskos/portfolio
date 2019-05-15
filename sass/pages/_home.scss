@@ -1,6 +1,6 @@
 .container {
     display: grid;
-    grid-template-rows: 95vh repeat(3, 800px);
+    grid-template-rows: 95vh repeat(3, 1000px);
     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] 
                            repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
                            [center-end] minmax(6rem, 1fr) [full-end];
@@ -8,6 +8,15 @@
 
 .projects {
     grid-column: full-start / full-end;
-    grid-row: 2 / 5;
-    background: linear-gradient(#353638, #E8EDF7);
+    background: linear-gradient(#D1D5DE, #E8EDF7);
+}
+
+.work {
+    grid-column: full-start / full-end;
+    background: linear-gradient(#E8EDF7, #D1D5DE);
+}
+
+.about {
+    grid-column: full-start / full-end;
+    background: linear-gradient(#D1D5DE, #E8EDF7);
 }

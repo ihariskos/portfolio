@@ -1,3 +1,13 @@
-.header {
-    
+.container {
+    display: grid;
+    grid-template-rows: 95vh repeat(3, 800px);
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] 
+                           repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+                           [center-end] minmax(6rem, 1fr) [full-end];
+}
+
+.projects {
+    grid-column: full-start / full-end;
+    grid-row: 2 / 5;
+    background: linear-gradient(#353638, #E8EDF7);
 }

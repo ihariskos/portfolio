@@ -187,6 +187,34 @@ body {
       grid-column: 1 / -1; }
   .gallery__card:hover .gallery__img {
     filter: grayscale(100%) brightness(40%); }
+  .gallery__link-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    display: flex;
+    justify-content: center; }
+  .gallery__link {
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    opacity: 0;
+    transition: all .3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    .gallery__link i {
+      font-size: 5rem;
+      margin-left: 1rem; }
+    .gallery__link p {
+      margin-left: 1rem;
+      font-size: 1.3rem; }
+    .gallery__link:hover {
+      color: #BABCBF;
+      transform: translateX(3px); }
+  .gallery__card:hover .gallery__link {
+    opacity: 1; }
   .gallery__img {
     display: block;
     width: 100%;

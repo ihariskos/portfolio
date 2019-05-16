@@ -10,7 +10,8 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: #EAEFF1; }
+  background-color: #EAEFF1;
+  color: #141414; }
 
 body {
   font-family: "Quicksand", sans-serif;
@@ -75,14 +76,14 @@ body {
       justify-self: start;
       height: 5rem;
       width: 5rem;
-      border: 2px solid black;
+      border: 2px solid #141414;
       shape-inside: polygon(0 0, 5rem 0, 5rem 5rem, 0 5rem);
       transition: all .5s ease;
       -webkit-clip-path: polygon(0 0, 5rem 0, 5rem 5rem, 0 5rem);
       clip-path: polygon(0 0, 5rem 0, 5rem 5rem, 0 5rem);
       cursor: pointer; }
     .header__btn:hover .header__btn-theme {
-      background-color: black;
+      background-color: #141414;
       shape-inside: polygon(2.5rem 0, 2.5rem 0, 0 5rem, 5rem 5rem);
       -webkit-clip-path: polygon(2.5rem 0, 2.5rem 0, 0 5rem, 5rem 5rem);
       clip-path: polygon(2.5rem 0, 2.5rem 0, 0 5rem, 5rem 5rem); }
@@ -108,7 +109,7 @@ body {
     z-index: 2000;
     text-align: center;
     cursor: pointer;
-    border: 2px solid black;
+    border: 2px solid #141414;
     shape-inside: polygon(0 0, 150px 0, 150px 150px, 0 150px);
     transition: all 0.5s ease;
     -webkit-clip-path: polygon(0 0, 150px 0, 150px 150px, 0 150px);
@@ -129,14 +130,15 @@ body {
   .navigation__item {
     margin: 1rem; }
   .navigation__link:link, .navigation__link:visited {
+    display: inline-block;
     font-size: 1.5rem;
     font-weight: 400;
-    color: black;
+    color: #141414;
     text-decoration: none; }
   .navigation__link::after, .navigation__link:active::after {
     display: block;
     content: '';
-    border-bottom: solid 2px black;
+    border-bottom: solid 2px #141414;
     transform: scaleX(0);
     transition: transform 250ms ease-in-out; }
   .navigation__link:hover::after, .navigation__link:active::after {
@@ -150,7 +152,7 @@ body {
     .navigation__icon, .navigation__icon::before, .navigation__icon::after {
       width: 2rem;
       height: 1.5px;
-      background-color: black;
+      background-color: #141414;
       display: inline-block; }
     .navigation__icon::before, .navigation__icon::after {
       content: "";
@@ -226,7 +228,7 @@ body {
     position: absolute;
     bottom: 5%;
     right: 5%;
-    color: aliceblue;
+    color: #fff;
     z-index: 2;
     width: 70%; }
 

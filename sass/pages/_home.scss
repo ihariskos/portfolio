@@ -1,20 +1,32 @@
 .container {
     display: grid;
-    // grid-row-gap: 10rem;
     grid-template-rows: 95vh repeat(4, min-content);
     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] 
                            repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
                            [center-end] minmax(6rem, 1fr) [full-end];
+
+    // @media only screen and (max-width: $bp-large) {
+    //     grid-template-columns: [full-start] 1fr [center-start] 
+    //                        repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+    //                        [center-end] 1fr [full-end];
+    // }
 }
 
 .projects {
-    // grid-column: full-start / full-end;
     grid-column: center-start / center-end;
     margin-bottom: 30rem;
+
+    @media only screen and (max-width: $bp-large) {
+        grid-column: full-start / full-end;
+    }
 }
 
 .work {
     grid-column: center-start / center-end;
+
+    @media only screen and (max-width: $bp-large) {
+        grid-column: full-start / full-end;
+    }
 }
 
 .about {
@@ -24,9 +36,23 @@
     grid-template-columns: repeat(4, 1fr);
     position: relative;
 
+    @media only screen and (max-width: $bp-large) {
+        grid-column: full-start / full-end;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        grid-template-columns: 1fr;
+    }
+
     &__img {
         grid-column: 1 / span 2;
         width: 100%;
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-column: 1 / -1;
+            // height: 50rem;
+            object-fit: cover;
+        }
     }
 
     &__text-box {
@@ -36,14 +62,17 @@
         color: #fff;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-evenly;
 
-        &-heading {
-
+        @media only screen and (max-width: $bp-medium) {
+            grid-column: 1 / -1;
+            grid-row: 1 / 2;
+            padding: 2.5rem 8rem;
+            height: 50rem;
         }
 
-        &-text {
-
+        p {
+            
         }
 
         &-icons {
@@ -64,7 +93,7 @@
 }
 
 .copylove {
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     display: flex;
     justify-content: center;
     
@@ -82,7 +111,7 @@
         &:active::after {
             display:block;
             content: '';
-            border-bottom: solid 2px black;  
+            border-bottom: solid 2px $foreground-light;  
             transform: scaleX(0);  
             transition: transform 250ms ease-in-out;
         }

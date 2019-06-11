@@ -1,0 +1,14 @@
+.copylove {
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    
+    &__link {
+        text-decoration: none;
+        font-weight: 700;
+        color: inherit;
+        
+        @include hover-link;
+    }
+    
+}

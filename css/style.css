@@ -18,7 +18,8 @@ html {
 body {
   box-sizing: border-box;
   background-color: #EAEFF1;
-  color: #141414; }
+  color: #141414;
+  transition: all .25s ease; }
   body.dark-theme {
     background-color: #141414;
     color: #EAEFF1; }
@@ -114,7 +115,12 @@ body {
   .header__logo {
     grid-row: 1/2;
     grid-column: 1/ -1;
-    justify-self: start; }
+    justify-self: start;
+    width: 5rem;
+    height: 5rem;
+    background-image: url("/img/ih_logo-black.svg"); }
+    .header__logo.dark-theme {
+      background-image: url("/img/ih_logo-white.svg"); }
     @media only screen and (max-width: 43.75em) {
       .header__logo {
         margin-left: 5.3rem; } }
@@ -125,6 +131,33 @@ body {
     grid-column: 1 / -1;
     align-self: start;
     justify-self: center; }
+
+.copylove {
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: center; }
+  .copylove__link {
+    text-decoration: none;
+    font-weight: 700;
+    color: inherit;
+    background: linear-gradient(to bottom, #141414 0%, #141414 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 2px 2px;
+    text-decoration: none;
+    transition: background-size .3s; }
+    .copylove__link.dark-theme {
+      background: linear-gradient(to bottom, #EAEFF1 0%, #EAEFF1 100%);
+      background-position: 0 100%;
+      background-repeat: repeat-x;
+      background-size: 2px 2px;
+      text-decoration: none;
+      transition: background-size .3s; }
+    .copylove__link:hover {
+      background-size: 4px 50px;
+      color: #EAEFF1; }
+      .copylove__link:hover.dark-theme {
+        color: #141414; }
 
 .gallery {
   display: grid;
@@ -277,23 +310,3 @@ body {
         transition: color .3s; }
         .about__text-box-icons a:hover {
           color: #fff; }
-
-.copylove {
-  margin-bottom: 5rem;
-  display: flex;
-  justify-content: center; }
-  .copylove__wrapper {
-    display: inline-block; }
-  .copylove a {
-    text-decoration: none;
-    font-weight: 700;
-    color: inherit; }
-    .copylove a::after, .copylove a:active::after {
-      display: block;
-      content: '';
-      border-bottom: solid 2px #141414;
-      transform: scaleX(0);
-      transition: transform 250ms ease-in-out; }
-    .copylove a:hover::after, .copylove a:active::after {
-      transform: scaleX(1);
-      transform-origin: 100% 50%; }

@@ -23,6 +23,7 @@ body {
     box-sizing: border-box;
     background-color: $background-light;
     color: $foreground-light;
+    transition: all .25s ease;
 
     &.dark-theme {
         background-color: $background-dark;

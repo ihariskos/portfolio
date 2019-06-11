@@ -47,6 +47,14 @@
       grid-column: 1/ -1;
       justify-self: start;
 
+      width: 5rem;
+      height: 5rem;
+      background-image: url('/img/ih_logo-black.svg');
+
+      &.dark-theme {
+        background-image: url('/img/ih_logo-white.svg');
+      }
+
       @media only screen and (max-width: $bp-medium) {
         margin-left: 5.3rem;
       }

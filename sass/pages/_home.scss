@@ -4,12 +4,6 @@
     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] 
                            repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
                            [center-end] minmax(6rem, 1fr) [full-end];
-
-    // @media only screen and (max-width: $bp-large) {
-    //     grid-template-columns: [full-start] 1fr [center-start] 
-    //                        repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
-    //                        [center-end] 1fr [full-end];
-    // }
 }
 
 .projects {
@@ -50,7 +44,6 @@
 
         @media only screen and (max-width: $bp-medium) {
             grid-column: 1 / -1;
-            // height: 50rem;
             object-fit: cover;
         }
     }
@@ -134,38 +127,3 @@
         }
     }    
 }
-
-.copylove {
-    margin-bottom: 5rem;
-    display: flex;
-    justify-content: center;
-    
-    &__wrapper {
-        display: inline-block;
-    }
-    
-    a {
-        text-decoration: none;
-        // text-transform: uppercase;
-        font-weight: 700;
-        color: inherit;
-
-        &::after,
-        &:active::after {
-            display:block;
-            content: '';
-            border-bottom: solid 2px $foreground-light;  
-            transform: scaleX(0);  
-            transition: transform 250ms ease-in-out;
-        }
-
-        &:hover::after,
-        &:active::after {
-            transform: scaleX(1);
-            transform-origin:  100% 50%;
-        }
-        
-    }
-    
-}
-

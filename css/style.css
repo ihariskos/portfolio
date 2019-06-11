@@ -121,9 +121,6 @@ body {
     background-image: url("/img/ih_logo-black.svg"); }
     .header__logo.dark-theme {
       background-image: url("/img/ih_logo-white.svg"); }
-    @media only screen and (max-width: 43.75em) {
-      .header__logo {
-        margin-left: 5.3rem; } }
     .header__logo-img {
       width: 5rem;
       height: 5rem; }
@@ -132,11 +129,18 @@ body {
     align-self: start;
     justify-self: center; }
 
-.copylove {
-  margin-bottom: 5rem;
+.footer {
+  padding: 3rem;
   display: flex;
-  justify-content: center; }
-  .copylove__link {
+  justify-content: space-between;
+  align-items: center; }
+  .footer__logo {
+    width: 5rem;
+    height: 5rem;
+    background-image: url("/img/ih_logo-black.svg"); }
+    .footer__logo.dark-theme {
+      background-image: url("/img/ih_logo-white.svg"); }
+  .footer__link {
     text-decoration: none;
     font-weight: 700;
     color: inherit;
@@ -146,18 +150,44 @@ body {
     background-size: 2px 2px;
     text-decoration: none;
     transition: background-size .3s; }
-    .copylove__link.dark-theme {
+    .footer__link.dark-theme {
       background: linear-gradient(to bottom, #EAEFF1 0%, #EAEFF1 100%);
       background-position: 0 100%;
       background-repeat: repeat-x;
       background-size: 2px 2px;
       text-decoration: none;
       transition: background-size .3s; }
-    .copylove__link:hover {
+    .footer__link:hover {
       background-size: 4px 50px;
       color: #EAEFF1; }
-      .copylove__link:hover.dark-theme {
+      .footer__link:hover.dark-theme {
         color: #141414; }
+  .footer__text-box .heading-1 {
+    margin-top: 0; }
+    .footer__text-box .heading-1 --sub {
+      font-size: 3rem;
+      letter-spacing: 1.6rem; }
+  .footer__btn {
+    height: 5rem; }
+    .footer__btn-theme {
+      justify-self: start;
+      height: 5rem;
+      width: 5rem;
+      border: 2px solid #141414;
+      shape-inside: polygon(0 0, 5rem 0, 5rem 5rem, 0 5rem);
+      transition: all .5s ease;
+      -webkit-clip-path: polygon(0 0, 5rem 0, 5rem 5rem, 0 5rem);
+      clip-path: polygon(0 0, 5rem 0, 5rem 5rem, 0 5rem);
+      cursor: pointer; }
+      .footer__btn-theme.dark-theme {
+        border: 2px solid #EAEFF1; }
+    .footer__btn:hover .footer__btn-theme {
+      background-color: #141414;
+      shape-inside: polygon(2.5rem 0, 2.5rem 0, 0 5rem, 5rem 5rem);
+      -webkit-clip-path: polygon(2.5rem 0, 2.5rem 0, 0 5rem, 5rem 5rem);
+      clip-path: polygon(2.5rem 0, 2.5rem 0, 0 5rem, 5rem 5rem); }
+      .footer__btn:hover .footer__btn-theme.dark-theme {
+        background-color: #EAEFF1; }
 
 .gallery {
   display: grid;

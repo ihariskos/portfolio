@@ -1,7 +1,18 @@
-.copylove {
-    margin-bottom: 5rem;
+.footer {
+    padding: 3rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        width: 5rem;
+        height: 5rem;
+        background-image: url('/img/ih_logo-black.svg');
+
+        &.dark-theme {
+            background-image: url('/img/ih_logo-white.svg');
+        }
+    }
     
     &__link {
         text-decoration: none;
@@ -9,6 +20,45 @@
         color: inherit;
         
         @include hover-link;
+    }
+
+    &__text-box .heading-1 {
+        margin-top: 0;
+        --sub {
+            font-size: 3rem;
+            letter-spacing: 1.6rem;
+        }
+    }
+
+    &__btn {
+        height: 5rem;
+
+        &-theme {
+            justify-self: start;
+            height: 5rem;
+            width: 5rem;
+            border: 2px solid $foreground-light;
+            shape-inside:polygon(0 0, 5rem 0, 5rem 5rem, 0 5rem);
+            transition:all .5s ease;
+            -webkit-clip-path: polygon(0 0, 5rem 0, 5rem 5rem, 0 5rem);
+            clip-path: polygon(0 0, 5rem 0, 5rem 5rem, 0 5rem);
+            cursor: pointer;
+                        
+            &.dark-theme {
+              border: 2px solid $foreground-dark;
+            }
+        }
+
+        &:hover &-theme {
+            background-color: $foreground-light;
+            shape-inside:polygon(2.5rem 0, 2.5rem 0, 0 5rem, 5rem 5rem);
+            -webkit-clip-path:polygon(2.5rem 0, 2.5rem 0, 0 5rem, 5rem 5rem);
+            clip-path:polygon(2.5rem 0, 2.5rem 0, 0 5rem, 5rem 5rem);
+
+            &.dark-theme {
+              background-color: $foreground-dark;
+            }
+        }
     }
     
 }

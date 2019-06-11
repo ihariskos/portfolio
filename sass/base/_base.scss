@@ -8,6 +8,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 
     @media only screen and (max-width: $bp-large) {
         font-size: 50%;
@@ -22,4 +23,9 @@ body {
     box-sizing: border-box;
     background-color: $background-light;
     color: $foreground-light;
+
+    &.dark-theme {
+        background-color: $background-dark;
+        color: $foreground-dark;
+    }
 }

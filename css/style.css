@@ -225,6 +225,9 @@ body {
     @media only screen and (max-width: 56.25em) {
       .gallery__link {
         margin-bottom: 2rem; } }
+    @media only screen and (max-width: 43.75em) {
+      .gallery__link {
+        opacity: 1; } }
     .gallery__link i {
       font-size: 5rem;
       margin-left: 1rem; }
@@ -243,6 +246,9 @@ body {
     object-fit: cover;
     transition: .3s -webkit-filter ease;
     filter: grayscale(0%) brightness(70%); }
+    @media only screen and (max-width: 43.75em) {
+      .gallery__img {
+        filter: grayscale(0%) brightness(40%); } }
   .gallery__text {
     position: absolute;
     bottom: 5%;
@@ -250,6 +256,12 @@ body {
     color: #fff;
     z-index: 2;
     width: 70%; }
+  .gallery__heading-box {
+    display: flex;
+    align-items: center; }
+    .gallery__heading-box h2 {
+      margin-left: 2rem;
+      margin-top: 3rem; }
 
 .container {
   display: grid;

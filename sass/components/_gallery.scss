@@ -52,6 +52,10 @@
             margin-bottom: 2rem;
         }
 
+        @media only screen and (max-width: $bp-medium) {
+            opacity: 1;
+        }
+
         i {
             font-size: 5rem;
             margin-left: 1rem;
@@ -80,6 +84,10 @@
         // background-size: cover;
         transition: .3s -webkit-filter ease;
         filter: grayscale(0%) brightness(70%);
+
+        @media only screen and (max-width: $bp-medium) {
+            filter: grayscale(0%) brightness(40%);
+        }
     }
 
     &__text {
@@ -92,6 +100,16 @@
 
         &-paragraph {
 
+        }
+    }
+
+    &__heading-box {
+        display: flex;
+        align-items: center;
+        
+        h2 {
+            margin-left: 2rem;
+            margin-top: 3rem;
         }
     }
 }

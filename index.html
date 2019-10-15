@@ -1,176 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Portfolio website of Ioannis Hariskos. Freelancing designer & developer for digital products."
+    />
+    <meta
+      name="keywords"
+      content="Freelancer, Web Development, Web Design, Web Hosting, Web application, HTML, CSS, JavaScript, Node.js"
+    />
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,600|Quicksand:400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=EB+Garamond:400,600|Quicksand:400,500,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
 
     <title>Ioannis Hariskos, Portfolio</title>
-</head>
-<body>
-    <div class="container">    
-        <header class="header">
-            <div class="header__btn theme-btn">
-                <div class="header__btn-theme"></div>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__btn theme-btn">
+          <div class="header__btn-theme"></div>
+        </div>
+        <div class="header__logo"></div>
+        <div class="header__text-box">
+          <h1 class="heading-1">
+            <span class="heading-1--main">Ioannis Hariskos</span>
+            <span class="heading-1--sub"
+              >Designer & Developer of digital products</span
+            >
+          </h1>
+        </div>
+      </header>
+
+      <section class="projects .mb-large" id="projects">
+        <div class="gallery">
+          <h2 class="heading-2">Projects.</h2>
+
+          <article class="gallery__card gallery__card--feature">
+            <div class="gallery__link-box">
+              <a
+                href="https://github.com/ihariskos/natours"
+                class="gallery__link"
+              >
+                <i class="fab fa-github-square"></i>
+                <p>See story and code.</p>
+              </a>
+              <a
+                href="https://ihariskos.github.io/natours/"
+                class="gallery__link"
+              >
+                <i class="fas fa-globe"></i>
+                <p>See live website.</p>
+              </a>
             </div>
-            <div class="header__logo">
-            </div>        
-            <div class="header__text-box">
-                <h1 class="heading-1">
-                    <span class="heading-1--main">Ioannis Hariskos</span>
-                    <span class="heading-1--sub">Designer & Developer of digital products</span>
-                </h1>
-            </div>        
-        </header>    
-        
-        <section class="projects .mb-large" id="projects">
-
-            <div class="gallery">
-                <h2 class="heading-2">Projects.</h2>
-
-                <article class="gallery__card gallery__card--feature">
-                        <div class="gallery__link-box">
-                            <a href="https://github.com/ihariskos/natours" class="gallery__link">
-                                <i class="fab fa-github-square"></i>
-                                <p>See story and code.</p>
-                            </a>
-                            <a href="https://ihariskos.github.io/natours/" class="gallery__link">
-                                <i class="fas fa-globe"></i>
-                                <p>See live website.</p>
-                            </a>
-                        </div>
-                        <div class="gallery__text">
-                            <h3 class="heading-3">Natours</h3>
-                            <p class="gallery__text-paragraph">This design for a fictional tour agency that provides hiking trips was built with traditional 
-                                CSS tools. It was coupled with some CSS animations, gradients and the clip-path property to create a nice modern look. This project 
-                                was also created according to the 7-1 SASS architecture which focuses upon modular development.
-                            </p>
-                        </div>
-                        <img srcset="img/natours-small.jpg 450w,
-                        img/natours-medium.jpg 900w,
-                        img/natours-large.jpg 1200w"
-                        sizes="(max-width: 43.75em) 100vw,
-                                (max-width: 56.25em) 100vw,
-                                100vw"
-                        src="img/natours-large.jpg" 
-                        alt="natours image" 
-                        class="gallery__img"
-                        >
-                </article>        
-
-                <article class="gallery__card">
-                        <div class="gallery__link-box">
-                            <a href="https://github.com/ihariskos/trillo" class="gallery__link">
-                                <i class="fab fa-github-square"></i>
-                                <p>See story and code.</p>
-                            </a>
-                            <a href="https://ihariskos.github.io/trillo/" class="gallery__link">
-                                <i class="fas fa-globe"></i>
-                                <p>See live website.</p>
-                            </a>
-                        </div>
-                        <div class="gallery__text">
-                            <h3 class="heading-3">Trillo</h3>
-                            <p class="gallery__text-paragraph">This design for a fictional travel all-in-one application was built with CSS Flexbox. 
-                                This tool was used to easily align items in various configuration of the layout. Some advanced CSS animations 
-                                were used again to make the site feel snappy and modern.
-                            </p>
-                        </div>
-                        <img srcset="img/trillo-small.jpg 450w,
-                        img/trillo-medium.jpg 900w,
-                        img/trillo-large.jpg 1200w"
-                        sizes="(max-width: 43.75em) 100vw,
-                                (max-width: 56.25em) 100vw,
-                                100vw"
-                        src="img/trillo-large.jpg" 
-                        alt="trillo image" 
-                        class="gallery__img"
-                        >
-                </article>
-
-                <article class="gallery__card">
-                        <div class="gallery__link-box">
-                            <a href="https://github.com/ihariskos/nexter" class="gallery__link">
-                                <i class="fab fa-github-square"></i>
-                                <p>See story and code.</p>
-                            </a>
-                            <a href="https://ihariskos.github.io/nexter/" class="gallery__link">
-                                <i class="fas fa-globe"></i>
-                                <p>See live website.</p>
-                            </a>
-                        </div>
-                        <div class="gallery__text">
-                            <h3 class="heading-3">Nexter</h3>
-                            <p class="gallery__text-paragraph">This design for a fictional real-estate company was built with the new CSS Grid tool. This makes 
-                                it a breeze to create complex layouts and making it smoother to create responsive layouts.
-                            </p>
-                        </div>
-                        <img srcset="img/nexter-small.jpg 450w,
-                        img/nexter-medium.jpg 900w,
-                        img/nexter-large.jpg 1200w"
-                        sizes="(max-width: 43.75em) 100vw,
-                                (max-width: 56.25em) 100vw,
-                                100vw"
-                        src="img/nexter-large.jpg" 
-                        alt="nexter image" 
-                        class="gallery__img"
-                        >
-                </article>               
+            <div class="gallery__text">
+              <h3 class="heading-3">Natours</h3>
+              <p class="gallery__text-paragraph">
+                This design for a fictional tour agency that provides hiking
+                trips was built with traditional CSS tools. It was coupled with
+                some CSS animations, gradients and the clip-path property to
+                create a nice modern look. This project was also created
+                according to the 7-1 SASS architecture which focuses upon
+                modular development.
+              </p>
             </div>
-        </section>
-
-        <section class="about mb-small" id="about">
-            <h2 class="heading-2">Hello.</h2>
-            <img srcset="img/me-small.jpg 450w,
-                        img/me-medium.jpg 900w,
-                        img/me-large.jpg 1200w"
-                        sizes="(max-width: 43.75em) 100vw,
+            <img
+              srcset="
+                img/natours-small.jpg   450w,
+                img/natours-medium.jpg  900w,
+                img/natours-large.jpg  1200w
+              "
+              sizes="(max-width: 43.75em) 100vw,
                                 (max-width: 56.25em) 100vw,
                                 100vw"
-                        src="img/me-large.jpg" 
-                        alt="Picture of me" 
-                        class="about__img"
-                        >
-            <div class="about__text-box">
-                <a href="mailto:hello@ioannishariskos.com" class="about__link-mail"><h3 class="heading-4">hello@ioannishariskos.com</h3></a>
-                <p>
-                    Hey there! I am currently freelancing and residing in the Netherlands.
-                    I love to design and build things with the incredible power of open-source 
-                    technology. Always looking for a new challenge.
-                </p>
-                <p>
-                    If you are interested in working with me or just want to ask me something: 
-                    <em>Say Hello by emailing me.</em> I will provide you with a custom quote for your project
-                    or just some wise words...
-                </p>
-                <div class="about__text-box-icons">
-                    <a href="https://github.com/ihariskos"><i class="fab 3x fa-github-square"></i></a>
-                    <!-- <a href="#"><i class="fab fa-codepen"></i></a> -->
-                    <a href="https://www.linkedin.com/in/ioannis-hariskos/"><i class="fab fa-linkedin"></i></a>
-                </div>
+              src="img/natours-large.jpg"
+              alt="natours image"
+              class="gallery__img"
+            />
+          </article>
+
+          <article class="gallery__card">
+            <div class="gallery__link-box">
+              <a
+                href="https://github.com/ihariskos/trillo"
+                class="gallery__link"
+              >
+                <i class="fab fa-github-square"></i>
+                <p>See story and code.</p>
+              </a>
+              <a
+                href="https://ihariskos.github.io/trillo/"
+                class="gallery__link"
+              >
+                <i class="fas fa-globe"></i>
+                <p>See live website.</p>
+              </a>
             </div>
-        </section>        
+            <div class="gallery__text">
+              <h3 class="heading-3">Trillo</h3>
+              <p class="gallery__text-paragraph">
+                This design for a fictional travel all-in-one application was
+                built with CSS Flexbox. This tool was used to easily align items
+                in various configuration of the layout. Some advanced CSS
+                animations were used again to make the site feel snappy and
+                modern.
+              </p>
+            </div>
+            <img
+              srcset="
+                img/trillo-small.jpg   450w,
+                img/trillo-medium.jpg  900w,
+                img/trillo-large.jpg  1200w
+              "
+              sizes="(max-width: 43.75em) 100vw,
+                                (max-width: 56.25em) 100vw,
+                                100vw"
+              src="img/trillo-large.jpg"
+              alt="trillo image"
+              class="gallery__img"
+            />
+          </article>
+
+          <article class="gallery__card">
+            <div class="gallery__link-box">
+              <a
+                href="https://github.com/ihariskos/nexter"
+                class="gallery__link"
+              >
+                <i class="fab fa-github-square"></i>
+                <p>See story and code.</p>
+              </a>
+              <a
+                href="https://ihariskos.github.io/nexter/"
+                class="gallery__link"
+              >
+                <i class="fas fa-globe"></i>
+                <p>See live website.</p>
+              </a>
+            </div>
+            <div class="gallery__text">
+              <h3 class="heading-3">Nexter</h3>
+              <p class="gallery__text-paragraph">
+                This design for a fictional real-estate company was built with
+                the new CSS Grid tool. This makes it a breeze to create complex
+                layouts and making it smoother to create responsive layouts.
+              </p>
+            </div>
+            <img
+              srcset="
+                img/nexter-small.jpg   450w,
+                img/nexter-medium.jpg  900w,
+                img/nexter-large.jpg  1200w
+              "
+              sizes="(max-width: 43.75em) 100vw,
+                                (max-width: 56.25em) 100vw,
+                                100vw"
+              src="img/nexter-large.jpg"
+              alt="nexter image"
+              class="gallery__img"
+            />
+          </article>
+        </div>
+      </section>
+
+      <section class="about mb-small" id="about">
+        <h2 class="heading-2">Hello.</h2>
+        <img
+          srcset="
+            img/me-small.jpg   450w,
+            img/me-medium.jpg  900w,
+            img/me-large.jpg  1200w
+          "
+          sizes="(max-width: 43.75em) 100vw,
+                                (max-width: 56.25em) 100vw,
+                                100vw"
+          src="img/me-large.jpg"
+          alt="Picture of me"
+          class="about__img"
+        />
+        <div class="about__text-box">
+          <a href="mailto:hello@ioannishariskos.com" class="about__link-mail"
+            ><h3 class="heading-4">hello@ioannishariskos.com</h3></a
+          >
+          <p>
+            Hey there! I am currently freelancing and residing in the
+            Netherlands. I love to design and build things with the incredible
+            power of open-source technology. Always looking for a new challenge.
+          </p>
+          <p>
+            If you are interested in working with me or just want to ask me
+            something:
+            <em>Say Hello by emailing me.</em> I will provide you with a custom
+            quote for your project or just some wise words...
+          </p>
+          <div class="about__text-box-icons">
+            <a href="https://github.com/ihariskos"
+              ><i class="fab 3x fa-github-square"></i
+            ></a>
+            <!-- <a href="#"><i class="fab fa-codepen"></i></a> -->
+            <a href="https://www.linkedin.com/in/ioannis-hariskos/"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </section>
     </div>
     <footer class="footer">
-        <div class="footer__btn theme-btn">
-            <div class="footer__btn-theme"></div>
-        </div>
-        <div class="footer__text-box">
-            <h1 class="heading-1">
-                <span class="heading-1--sub"><p>Feel free to <a href="https://github.com/ihariskos/portfolio" class="footer__link">share</a></p>
-                </span>
-            </h1>
-        </div> 
-        <div class="footer__logo">
-        </div>            
+      <div class="footer__btn theme-btn">
+        <div class="footer__btn-theme"></div>
+      </div>
+      <div class="footer__text-box">
+        <h1 class="heading-1">
+          <span class="heading-1--sub"
+            ><p>
+              Feel free to
+              <a
+                href="https://github.com/ihariskos/portfolio"
+                class="footer__link"
+                >share</a
+              >
+            </p>
+          </span>
+        </h1>
+      </div>
+      <div class="footer__logo"></div>
     </footer>
 
     <!-- Theme changer js -->
     <script src="/js/theme-changer.js"></script>
-
-</body>
+  </body>
 </html>
